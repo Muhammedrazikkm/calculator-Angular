@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="text-center mt-5">Addition</h1>
+    <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-8 p-5 border shadow">
+            <div class="mb-3">
+                <input type="text" placeholder="enter number 1" class="form-control" #tbox1>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="enter number 2" class="form-control" #tbox2>
+            </div>
+            <div class="mb-3">
+                <input type="button" class="form-control btn btn-outline-info" value="ADD" (click)="performAddition(tbox1,tbox2)">
+                <h2>Result ={{result}}</h2>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

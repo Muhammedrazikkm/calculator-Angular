@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="text-center mt-5">BMI</h1>
+    <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-8 p-5 border shadow">
+            <div class="mb-3">
+                <input type="text" placeholder="enter weight" class="form-control" [(ngModel)]="weight">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="enter height" class="form-control" [(ngModel)]="height">
+            </div>
+            <div class="mb-3">
+                <input type="button" class="form-control btn btn-outline-info" value="CALCULATE" (click)="performBmi()">
+                <h2>Result ={{result}}</h2>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
